@@ -26,22 +26,22 @@ if [[ "$GITINIT" != 'git status' ]]; then
         done
 else
     echo ""
-    echo 'On branch main' 
-    echo 'nothing to commit, working tree clean'
+    echo -e '\033[3mOn branch main\033[0m'
+    echo -e '\033[3mnothing to commit, working tree clean\033[0m'
+    echo ''
 fi
 
-echo ""
 echo 'Git status explains the state of the repository at any given time.'
 echo 'As you can see, you are on the default "main" branch.  We will dig into branching later on.'
 echo ""
 echo 'And since you have only initialized the folder so far, there is nothing to commit.'
 
 echo ""
-echo 'You are going to use git status a lot, as in every chapter moving ahead.'
+echo 'You are going to use git status a lot, in almost every chapter moving ahead.'
 echo "This was just a quick intro"
 echo ""
 echo "Let's go on to lesson 3"
 echo ""
 IFS=$OLDIFS
 read -n 1 -s -r -p 'Press any key to continue or ctl+c to quit... '
-
+./levels/gv-3-log.sh

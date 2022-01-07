@@ -3,48 +3,45 @@ OLDIFS=$IFS
 IFS=,
 
 clear
-echo "Chapter 1: git init"
+echo "Chapter 2: git status"
 echo ""
-echo 'In this chapter we will look at one of the most important Git commands'
-echo 'though you likely will not run it that often.'
+echo 'In this chapter we will look at a Git commands you will run often.'
+echo 'it is a completely safe command you can run as much as you like!'
 echo ''
-echo 'From the manual: git-init - Create an empty Git repository or reinitialize an existing one.'
+echo 'From the manual:  git-status - Show the working tree status.'
+echo 'But what does that mean???'
 echo ''
-echo 'Go ahead and try it, type "git init" (without the quotes):'
+echo 'Go ahead and try it, type "git status" (without the quotes):'
 echo -n "$" && read GITINIT
 
-if [[ "$GITINIT" != 'git init' ]]; then
+if [[ "$GITINIT" != 'git status' ]]; then
     MATCH=0    
         while [[ $MATCH == 0 ]];     
         do
             echo 'that is not quite right, try again'
             read GITINIT
-            if [[ "$GITINIT" == 'git init' ]]; then
+            if [[ "$GITINIT" == 'git status' ]]; then
                 MATCH=1
             fi
         done
 else
     echo ""
-    echo 'Good Work '$USERNAME'!'
+    echo -e '\033[3mOn branch main\033[0m'
+    echo -e '\033[3mnothing to commit, working tree clean\033[0m'
+    echo ''
 fi
 
+echo 'Git status explains the state of the repository at any given time.'
+echo 'As you can see, you are on the default "main" branch.  We will dig into branching later on.'
 echo ""
-echo 'So what did that do?'
-echo 'If you have Git installed and do this inside any folder on your computer, then a special folder gets created'
-echo 'That folder is called .git'
+echo 'And since you have only initialized the folder so far, there is nothing to commit.'
+
 echo ""
-echo 'Here is what the .git folder for this repo looks like on your machine:'
+echo 'You are going to use git status a lot, as in every chapter moving ahead.'
+echo "This was just a quick intro"
 echo ""
-ls -a .git
-echo ""
-echo 'you can run this yourself by typing "ls -a .git" in a folder Git is tracking.'
-echo ""
-echo 'There is a lot of stuff to unpack there, but that is a lesson for another day...'
-echo ""
-echo 'For now, just know you have created this folder and have alerted Git that it should know about the folder in question.'
-echo ""
-echo "Let's go on to lesson 2"
+echo "Let's go on to lesson 3"
 echo ""
 IFS=$OLDIFS
 read -n 1 -s -r -p 'Press any key to continue or ctl+c to quit... '
-
+./levels/gv-4-add.sh
