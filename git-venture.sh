@@ -20,28 +20,50 @@ echo 'Hello' $USERNAME
 echo ""
 export USERNAME
 
-if [ -z "$2" ]; then
-	echo -n 'Pick a chapter to begin: ' && read CHAPTERSELECT
-else  
-	CHAPTERSELECT=$2  
-fi
+echo "Chapter list:"
+echo "  1 - git init"
+echo "  2 - git status"
+echo "  3 - git log"
+echo "  4 - git add"
+echo "  5 - git commit -m"
+echo "  6 - git push"
+echo "  7 - git pull"
+echo ""
 
-case $CHAPTERSELECT in
-    1)
-        ./levels/gv-1-init.sh
-        ;;
-    2) 
-        echo 'Level 2'
-        ;;
-    *)
-        echo "pick a level"
-        ;;
-esac
+while ! [[ "$CHAPTERSELECT" =~ ^[0-7]+$ ]];
+do 
+    if [ -z "$2" ]; then
+	    echo -n 'Pick a chapter to begin: ' && read CHAPTERSELECT
+    else  
+	    CHAPTERSELECT=$2  
+fi
+done
+
+    case $CHAPTERSELECT in
+        1)
+            ./levels/gv-1-init.sh
+            ;;
+        2) 
+            ./levels/gv-2-status.sh
+            ;;
+        3) 
+            ./levels/gv-3-log.sh
+            ;;
+        4) 
+            ./levels/gv-4-add.sh
+            ;;
+        5) 
+            ./levels/gv-5-commit.sh
+            ;;
+        6) 
+            ./levels/gv-6-push.sh
+            ;;
+        7) 
+            ./levels/gv-7-pull.sh
+            ;;
+        *)
+            echo "pick a level"
+            ;;
+    esac
 
 echo 'DONE WITH MAIN SCRIPT'
-
-# if [[ "$CHAPTERSELECT" -eq 1 ]]; then 
-#     ./levels/gv-1.sh
-# else 
-#     echo "I don't understand.  I need a number please..." echo -n 
-# fi

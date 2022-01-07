@@ -47,4 +47,4 @@ echo "Let's go on to lesson 2"
 echo ""
 IFS=$OLDIFS
 read -n 1 -s -r -p 'Press any key to continue or ctl+c to quit... '
-
+./levels/gv-2-status.sh
