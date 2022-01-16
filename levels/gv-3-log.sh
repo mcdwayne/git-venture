@@ -3,9 +3,9 @@ OLDIFS=$IFS
 IFS=,
 
 clear
-echo "Chapter 2: git status"
+echo "Chapter 3: git log"
 echo ""
-echo 'In this chapter we will look at a Git commands you will run often.'
+echo 'Looking at your Git history of commits commands you will run often.'
 echo 'it is a completely safe command you can run as much as you like!'
 echo ''
 echo 'From the manual:  git-status - Show the working tree status.'
