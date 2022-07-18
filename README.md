@@ -1,7 +1,7 @@
 # Git Venture
 ## The text based game to learn Git basics
 
-Inspired by Adveture and Zork, git-venture is a text based game that teaches the basics of Git.   
+Inspired by Adventure and Zork, git-venture is a text based game that teaches the basics of Git.   
 
 ## How to play
 
