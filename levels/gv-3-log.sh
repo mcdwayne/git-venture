@@ -8,27 +8,33 @@ echo ""
 echo 'Looking at your Git history of commits commands you will run often.'
 echo 'it is a completely safe command you can run as much as you like!'
 echo ''
-echo 'From the manual:  git-status - Show the working tree status.'
+echo 'From the manual:  git-log - Show commit logs.'
 echo 'But what does that mean???'
 echo ''
-echo 'Go ahead and try it, type "git status" (without the quotes):'
-echo -n "$" && read GITINIT
+echo 'Go ahead and try it, type "git log" (without the quotes):'
+echo -n "$" && read GITLOG
 
-if [[ "$GITINIT" != 'git status' ]]; then
+if [[ "$GITLOG" != 'git log' ]]; then
     MATCH=0    
         while [[ $MATCH == 0 ]];     
         do
             echo 'that is not quite right, try again'
-            read GITINIT
-            if [[ "$GITINIT" == 'git status' ]]; then
+            read GITLOG
+            if [[ "$GITLOG" == 'git log' ]]; then
                 MATCH=1
             fi
         done
 else
     echo ""
-    echo -e '\033[3mOn branch main\033[0m'
-    echo -e '\033[3mnothing to commit, working tree clean\033[0m'
+    echo -e '\033[3mcommit 3f4444c6a4c2e545234133ee4be75ea2ee1e4898\033[0m'
+    echo -e '\033[3mAuthor: Dwayne <1dwayne.mcdaniel@gmail.com>\033[0m'
+    echo -e '\033[3mDate:   Fri Jan 15 09:53:55 2022 -0600\033[0m'
     echo ''
+    echo -e '\033[3m init chapter and base logic vo.1\033[0m'
+    echo ''
+    echo "------------------------------------------------------"
+    echo "------------------------------------------------------"
+    
 fi
 
 echo 'Git status explains the state of the repository at any given time.'
