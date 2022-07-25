@@ -17,4 +17,4 @@ Inspired by Adventure and Zork, git-venture is a text based game that teaches th
 This work is released under [The Unlicense](https://choosealicense.com/licenses/unlicense/)
 
 
-/Git
+EOF
