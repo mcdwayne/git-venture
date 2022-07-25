@@ -37,7 +37,7 @@ else
     
 fi
 
-echo 'Git status explains the state of the repository at any given time.'
+echo 'Git log is your commit history'
 echo 'As you can see, you are on the default "main" branch.  We will dig into branching later on.'
 echo ""
 echo 'And since you have only initialized the folder so far, there is nothing to commit.'
