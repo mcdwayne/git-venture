@@ -8,7 +8,7 @@ echo ""
 echo 'In this chapter we will look at one of the most important Git commands'
 echo 'that is key to using Git - add'
 echo ''
-echo 'From the manual: git-init - Create an empty Git repository or reinitialize an existing one.'
+echo 'From the manual: git-add - Add file contents to the index'
 echo ''
 echo 'Go ahead and try it, type "git init" (without the quotes):'
 echo -n "$" && read GITINIT
