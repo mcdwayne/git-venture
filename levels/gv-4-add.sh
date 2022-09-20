@@ -3,7 +3,7 @@ OLDIFS=$IFS
 IFS=,
 
 clear
-echo "Chapter 1: git init"
+echo "Chapter 4: git add"
 echo ""
 echo 'In this chapter we will look at one of the most important Git commands'
 echo 'though you likely will not run it that often.'
