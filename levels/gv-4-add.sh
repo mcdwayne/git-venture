@@ -14,16 +14,16 @@ echo 'This naturally might lead to a question about what is "the index"? Glad yo
 echo ''
 echo 'The index is a special file in the .git folder. This file acts as the staging area, where Git is tracking all the modified files you want to store as a commit.'
 echo ''
-echo 'Go ahead and try it, type "git init" (without the quotes):'
+echo 'Go ahead and try it, type "git add" (without the quotes):'
 echo -n "$" && read GITINIT
 
-if [[ "$GITINIT" != 'git init' ]]; then
+if [[ "$GITINIT" != 'git add' ]]; then
     MATCH=0    
         while [[ $MATCH == 0 ]];     
         do
             echo 'that is not quite right, try again'
             read GITINIT
-            if [[ "$GITINIT" == 'git init' ]]; then
+            if [[ "$GITINIT" == 'git add' ]]; then
                 MATCH=1
             fi
         done
@@ -34,8 +34,9 @@ fi
 
 echo ""
 echo 'So what did that do?'
-echo 'If you have Git installed and do this inside any folder on your computer, then a special folder gets created'
-echo 'That folder is called .git'
+echo 'NOTHING!!!!'
+echo ""
+echo "You didn't actually tell it what to add. "
 echo ""
 echo 'Here is what the .git folder for this repo looks like on your machine:'
 echo ""
