@@ -10,6 +10,10 @@ echo 'that is key to using Git - add'
 echo ''
 echo 'From the manual: git-add - Add file contents to the index'
 echo ''
+echo 'This naturally might lead to a question about what is "the index"? Glad you asked!'
+echo ''
+echo 'The index is a special file in the .git folder. This file acts as the staging area, where Git is tracking all the modified files you want to store as a commit.'
+echo ''
 echo 'Go ahead and try it, type "git init" (without the quotes):'
 echo -n "$" && read GITINIT
 
