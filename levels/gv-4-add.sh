@@ -6,7 +6,7 @@ clear
 echo "Chapter 4: git add"
 echo ""
 echo 'In this chapter we will look at one of the most important Git commands'
-echo 'though you likely will not run it that often.'
+echo 'that is key to using Git - add'
 echo ''
 echo 'From the manual: git-init - Create an empty Git repository or reinitialize an existing one.'
 echo ''
