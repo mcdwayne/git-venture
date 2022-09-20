@@ -38,10 +38,6 @@ echo 'NOTHING!!!!'
 echo ""
 echo "You didn't actually tell it what to add. "
 echo ""
-echo 'Here is what the .git folder for this repo looks like on your machine:'
-echo ""
-ls -a .git
-echo ""
 echo 'you can run this yourself by typing "ls -a .git" in a folder Git is tracking.'
 echo ""
 echo 'There is a lot of stuff to unpack there, but that is a lesson for another day...'
