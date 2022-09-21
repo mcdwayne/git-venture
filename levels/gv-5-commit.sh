@@ -43,7 +43,7 @@ echo 'There is a lot of stuff to unpack there, but that is a lesson for another 
 echo ""
 echo 'For now, just know you have created this folder and have alerted Git that it should know about the folder in question.'
 echo ""
-echo "Let's go on to lesson 2"
+echo "Let's go on to lesson 6"
 echo ""
 IFS=$OLDIFS
 read -n 1 -s -r -p 'Press any key to continue or ctl+c to quit... '
