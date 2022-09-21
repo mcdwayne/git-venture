@@ -3,10 +3,10 @@ OLDIFS=$IFS
 IFS=,
 
 clear
-echo "Chapter 1: git init"
+echo "Chapter 5: git commit"
 echo ""
-echo 'In this chapter we will look at one of the most important Git commands'
-echo 'though you likely will not run it that often.'
+echo 'The basic unit of work in Git is the commit.'
+echo 'This is what we call the snapshots of the file system we can take when we are ready to preserve a working state.'
 echo ''
 echo 'From the manual: git-init - Create an empty Git repository or reinitialize an existing one.'
 echo ''
