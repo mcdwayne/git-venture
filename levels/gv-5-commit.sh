@@ -8,7 +8,7 @@ echo ""
 echo 'The basic unit of work in Git is the commit.'
 echo 'This is what we call the snapshots of the file system we can take when we are ready to preserve a working state.'
 echo ''
-echo 'From the manual: git-init - Create an empty Git repository or reinitialize an existing one.'
+echo 'From the manual: git-commit - Record changes to the repository'
 echo ''
 echo 'Go ahead and try it, type "git init" (without the quotes):'
 echo -n "$" && read GITINIT
