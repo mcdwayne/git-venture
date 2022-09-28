@@ -38,13 +38,18 @@ echo 'NOTHING!!!!'
 echo ""
 echo "You didn't actually tell it what to add. "
 echo ""
-echo 'you can run this yourself by typing "ls -a .git" in a folder Git is tracking.'
+echo 'We need to tell Git add exactly what to add. We can do this for a single file'
 echo ""
-echo 'There is a lot of stuff to unpack there, but that is a lesson for another day...'
+echo "git add <file.ext>"
 echo ""
-echo 'For now, just know you have created this folder and have alerted Git that it should know about the folder in question.'
+echo 'Or for multiple files. Just name the files, like this:'
 echo ""
-echo "Let's go on to lesson 2"
+echo "git add <file.ext> <file2.ext> <file3.ext>"
+echo ""
+echo 'You can even add EVERYTHING at once, but that is not a good idea in general...'
+echo "But sometimes, well, it does not hurt, like when you only mod one file"
+echo ""
+echo "Let's go on to lesson 5"
 echo ""
 IFS=$OLDIFS
 read -n 1 -s -r -p 'Press any key to continue or ctl+c to quit... '
